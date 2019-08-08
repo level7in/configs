@@ -4,3 +4,5 @@
 * vim
 * iterm2
 * brew
+## 无需配置工具
+* sketch-measure sketch切图
