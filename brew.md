@@ -22,3 +22,5 @@
 | wget                    |                    |
 | zsh-autosuggestions     | zsh-plugn 命令提示 |
 | zsh-syntax-highlighting | zsh-plugn 高亮     |
+| Asciinema               | 录屏               |
+| exa                     | 代替ls             |
