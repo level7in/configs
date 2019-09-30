@@ -7,7 +7,7 @@
 | ag                      | 检索文本           |
 | bat                     | 代替cat            |
 | cmatrix                 | 装B                |
-| emacs                   | 编辑               |
+| spacemacs               | 编辑               |
 | fzf                     | 检索目录           |
 | git                     |                    |
 | htop                    | 代替top            |
@@ -18,9 +18,10 @@
 | ranger                  | 文件管理器         |
 | tmux                    | 分屏               |
 | tree                    | 打印层级           |
-| vim                     | 编辑               |
+| spacevim                | 编辑               |
 | wget                    |                    |
 | zsh-autosuggestions     | zsh-plugn 命令提示 |
 | zsh-syntax-highlighting | zsh-plugn 高亮     |
 | Asciinema               | 录屏               |
 | exa                     | 代替ls             |
+| prettyping              | 代替ping           |
