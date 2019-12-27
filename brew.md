@@ -6,9 +6,9 @@
 | autojump                | 跳转               |
 | ag                      | 检索文本           |
 | bat                     | 代替cat            |
-| cmatrix                 | 装B                |
+| cmatrix                 |                    |
 | spacemacs               | 编辑               |
-| fzf                     | 检索目录           |
+| fzf                     | 模糊搜索           |
 | git                     |                    |
 | htop                    | 代替top            |
 | neofetch                | 打印系统信息       |
@@ -25,3 +25,4 @@
 | Asciinema               | 录屏               |
 | exa                     | 代替ls             |
 | prettyping              | 代替ping           |
+| tig                     | 图形化git          |
