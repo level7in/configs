@@ -4,7 +4,7 @@
 * [zsh](.zshrc)
 * [vim](.vimrc)
 * [iterm2](iterm2.json)
-* [brew](README.md)
-* 
+* [brew](brew.md)
+
 ## Other
 * sketch-measure sketch切图
