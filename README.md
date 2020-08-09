@@ -1,8 +1,10 @@
 # configs
+
 ## Dev
-* zsh
-* vim
-* iterm2
-* brew
+* [zsh](.zshrc)
+* [vim](.vimrc)
+* [iterm2](iterm2.json)
+* [brew](README.md)
+* 
 ## Other
 * sketch-measure sketch切图
