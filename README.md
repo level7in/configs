@@ -20,6 +20,7 @@
     - thefuck
     - zsh-better-npm-completion
     - zsh-proxy
+    - zsh-you-should-use
 
   </details>
 
