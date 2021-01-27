@@ -71,8 +71,18 @@
   > curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash
 
   `color.sh`
-  >curl -s https://raw.githubusercontent.com/spencerwooo/dotfiles/master/scripts/color.sh | bash
+  > curl -s https://raw.githubusercontent.com/spencerwooo/dotfiles/master/scripts/color.sh | bash
   </details>
 
 ## Other
-* sketch-measure sketch切图
+* [Sketch-measure](https://utom.design/measure.html) sketch切图
+* [NexusFont](https://www.xiles.net/) Windows下字体管理
+* [typeface](https://typefaceapp.com/) macOS下字体管理
+* [MonitorControl](https://github.com/MonitorControl/MonitorControl) macOS外接显示器亮度控制
+* [Snipaste](https://zh.snipaste.com/) 截图
+* [Bob](https://github.com/ripperhe/Bob) macOS下翻译
+* [QTranslate](https://quest-app.appspot.com/) Windows下翻译
+* [Sip](https://sipapp.io/) macOS下取色器
+* [Eagle](https://cn.eagle.cool/) 素材管理
+* [Postman](https://www.postman.com/) API Tool
+* [Paw](https://paw.cloud/) macOS API Tool

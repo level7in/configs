@@ -2,13 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/7in/.oh-my-zsh"
+export ZSH="/home/ronson/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="dracula"
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="af-magic"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -26,8 +26,14 @@ ZSH_THEME="dracula"
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -62,14 +68,35 @@ ZSH_THEME="dracula"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git autojump zsh-autosuggestions nvm npm brew
-)
+plugins=(git zsh-autosuggestions autojump nvm yarn fzf node npm zsh-completions zsh-syntax-highlighting thefuck zsh-better-npm-completion zsh-proxy you-should-use)
 
-source $ZSH/oh-my-zsh.sh
 # User configuration
-
+# Change ls colours
+LS_COLORS="ow=01;36;40" && export LS_COLORS
+# make cd use the ls colours
+zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
+autoload -Uz compinit
+compinit
 # export MANPATH="/usr/local/man:$MANPATH"
+echo "
+   __             _______    
+  / ___ _  _____ / /_  (____ 
+ / / -_| |/ / -_/ / / / / _ \/
+/_/\__/|___/\__/_/ /_/_/_//_/
+"
+
+# __/\\\______________/\\\\\\\\\\\\\\\__/\\\________/\\\__/\\\\\\\\\\\\\\\__/\\\______________/\\\\\\\\\\\\\\\___/\\\\\\\\\\\__/\\\\\_____/\\\_
+#  _\/\\\_____________\/\\\///////////__\/\\\_______\/\\\_\/\\\///////////__\/\\\_____________\/////////////\\\__\/////\\\///__\/\\\\\\___\/\\\_
+#   _\/\\\_____________\/\\\_____________\//\\\______/\\\__\/\\\_____________\/\\\________________________/\\\/_______\/\\\_____\/\\\/\\\__\/\\\_
+#    _\/\\\_____________\/\\\\\\\\\\\______\//\\\____/\\\___\/\\\\\\\\\\\_____\/\\\______________________/\\\/_________\/\\\_____\/\\\//\\\_\/\\\_
+#     _\/\\\_____________\/\\\///////________\//\\\__/\\\____\/\\\///////______\/\\\____________________/\\\/___________\/\\\_____\/\\\\//\\\\/\\\_
+#      _\/\\\_____________\/\\\________________\//\\\/\\\_____\/\\\_____________\/\\\__________________/\\\/_____________\/\\\_____\/\\\_\//\\\/\\\_
+#       _\/\\\_____________\/\\\_________________\//\\\\\______\/\\\_____________\/\\\________________/\\\/_______________\/\\\_____\/\\\__\//\\\\\\_
+#        _\/\\\\\\\\\\\\\\\_\/\\\\\\\\\\\\\\\______\//\\\_______\/\\\\\\\\\\\\\\\_\/\\\\\\\\\\\\\\\__/\\\/______________/\\\\\\\\\\\_\/\\\___\//\\\\\_
+#         _\///////////////__\///////////////________\///________\///////////////__\///////////////__\///_______________\///////////__\///_____\/////__
+# 
+
+
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -84,28 +111,19 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll="ls -al"
-
-#alias for cnpm
-alias cnpm="npm --registry=https://registry.npm.taobao.org \
-  --cache=$HOME/.npm/.cache/cnpm \
-  --disturl=https://npm.taobao.org/dist \
-  --userconfig=$HOME/.cnpmrc"
-
+alias ngrok="~/Download/ngrok"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
 export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export ANDROID_HOME="/usr/local/opt/android-sdk"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source $ZSH/oh-my-zsh.sh
